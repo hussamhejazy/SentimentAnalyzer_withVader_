@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+<form action="#" method="post">
+        <label for="commint">text:</label>
+        <input type="text" id="commint" name="commint" placeholder="Enter commint"><br><br>
+                
+        <input type="submit" value="Submit">
+</form>
+{% if text %}
+<h2>Result:</h2>
+<p>{{ text }}</p>
+{% else %}
+<p>Submit a comment to see the result.</p>
+{% endif %}
+{% endblock %}
